@@ -5,6 +5,22 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.sideBar {
+  position: fixed;
+
+  opacity: 0.5;
+  right: 10px;
+  top: 100px;
+  width: 60px;
+  height: 36%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4rem;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  color: #000000;
+}
 
 .cards {
   background-color: black;

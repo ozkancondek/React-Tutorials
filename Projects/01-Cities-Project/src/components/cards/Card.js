@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 //import css file
 import "./Cards.css";
 import { MdOutlineFavorite } from "react-icons/md";
@@ -40,4 +41,11 @@ export const Card = ({ card, setFavList, id, isFavorite }) => {
       </div>
     </div>
   );
+};
+
+Card.protoTypes = {
+  isFavorite: PropTypes.bool.isRequired,
+  data: PropTypes.object.isRequired,
+  setFavList: PropTypes.object.isRequired,
+  id: PropTypes.number.isRequired,
 };
