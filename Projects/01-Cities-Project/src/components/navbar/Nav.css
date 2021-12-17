@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+.navbar {
+  background-color: #171b20;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Amatic SC", cursive;
+}
+
+.navbar a:hover {
+  background-color: #93a9b3;
+  color: black;
+}
+.input-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  margin: 3px;
+}
+
+.input {
+  margin: 20px;
+  height: 30px;
+  width: 350px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
