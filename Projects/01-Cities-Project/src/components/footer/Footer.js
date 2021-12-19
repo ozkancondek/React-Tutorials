@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Footer.css";
 import {
@@ -10,21 +11,21 @@ import {
 export const Footer = () => {
   return (
     <div>
-      <footer class="footer-distributed">
-        <div class="footer-left">
+      <footer className="footer-distributed">
+        <div className="footer-left">
           <h3>
             <FaRaspberryPi /> Blue <span>Berry</span>
           </h3>
 
-          <p class="footer-links">
+          <p className="footer-links">
             <a href="#">Home</a> - <a href="#">Blog</a> -{" "}
             <a href="#">Pricing</a> - <a href="#">Locations</a> -
             <a href="#">Faq</a> - <a href="#">Contact</a>
           </p>
 
-          <p class="footer-company-name">BlueBerry © 2021</p>
+          <p className="footer-company-name">BlueBerry © 2021</p>
 
-          <div class="footer-icons">
+          <div className="footer-icons">
             <a href="#">
               <FaInstagram />
             </a>
@@ -40,7 +41,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div class="footer-right">
+        <div className="footer-right">
           <p>Contact Us</p>
 
           <form type="submit">

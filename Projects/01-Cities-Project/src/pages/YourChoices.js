@@ -1,8 +1,7 @@
 import React from "react";
 import "../components/cards/Cards.css";
 import { Card } from "../components/cards/Card";
-import { Nav } from "../components/navbar/Nav";
-import { NavbarProvider } from "../providers/NavbarProvider";
+
 import { useOut } from "../providers/OuterProvider";
 
 export const YourChoices = () => {
@@ -26,10 +25,7 @@ export const YourChoices = () => {
 
   return (
     <div>
-      <NavbarProvider>
-        <Nav />
-        <div className="card-container">{favCities}</div>
-      </NavbarProvider>
+      <div className="card-container">{favCities}</div>
     </div>
   );
 };

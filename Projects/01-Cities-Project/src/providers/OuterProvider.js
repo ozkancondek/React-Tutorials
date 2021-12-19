@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 const OuterContext = createContext();
 
 export const OuterProvider = (props) => {
+  // eslint-disable-next-line no-unused-vars
   const [isAuthenticated, setIsAutenticated] = useState(false);
   //assign an array to add id of liked cities
   const [favList, setFavList] = useState([]);

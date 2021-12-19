@@ -1,15 +1,14 @@
-import React from "react";
 import { Card } from "./Card";
 import PropTypes from "prop-types";
 //import css file
 import "./Cards.css";
-import { Sidebar } from "./Sidebar";
+
 import { useSearch } from "../../providers/NavbarProvider";
 import { useOut } from "../../providers/OuterProvider";
 //call object elements from App.js with object destructuring
 
 export const Cards = () => {
-  const { isAuthenticated, data, favList, setFavList } = useOut();
+  const { data, favList } = useOut();
 
   //call my custom hook
   const { val } = useSearch();
@@ -24,7 +23,7 @@ export const Cards = () => {
             card.id
           )} /* check if the id key of card exist in local storage */
           card={card}
-          key={data.id}
+          key={card.id}
           id={card.id} /* call id key of the card with id unique name */
         />
       );
