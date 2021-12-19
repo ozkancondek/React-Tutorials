@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { FaPlaneDeparture } from "react-icons/fa";
 import { useSearch } from "../../providers/NavbarProvider";
 import "./Nav.css";
+import { Link } from "react-router-dom";
 export const Nav = () => {
   //call my custom hook
   const { setVal } = useSearch();
@@ -13,23 +14,36 @@ export const Nav = () => {
 
   return (
     <div className="navbar">
-      <a href="home">
-        <FaPlaneDeparture />
-      </a>
-      <a href="aboutus">Route</a>
-      <a href="foryou">Your Choices</a>
-      <a href="services">Services</a>
-      <a href="blog">Blog</a>
-
-      <a href="contact">Contact</a>
-      <div className="input-area">
-        <input
-          className="input"
-          type="text"
-          placeholder="Search for results"
-          onChange={filterCity}
-        ></input>
-      </div>
+      <ul>
+        <li>
+          <Link to="/">
+            <FaPlaneDeparture />
+          </Link>
+        </li>
+        <li>
+          <Link to="/routes">Routes</Link>
+        </li>
+        <li>
+          <Link to="/yourchoices">Your Choices</Link>
+        </li>
+        <li>
+          <Link to="/services">Services</Link>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li className="input-area">
+          <input
+            className="input"
+            type="text"
+            placeholder="Search for results"
+            onChange={filterCity}
+          ></input>
+        </li>
+      </ul>
     </div>
   );
 };

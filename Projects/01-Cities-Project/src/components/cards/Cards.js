@@ -10,7 +10,7 @@ import { useOut } from "../../providers/OuterProvider";
 
 export const Cards = () => {
   const { isAuthenticated, data, favList, setFavList } = useOut();
-  console.log(isAuthenticated);
+
   //call my custom hook
   const { val } = useSearch();
 
