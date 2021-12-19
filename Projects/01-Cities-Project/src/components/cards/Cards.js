@@ -4,9 +4,16 @@ import PropTypes from "prop-types";
 //import css file
 import "./Cards.css";
 import { Sidebar } from "./Sidebar";
+import { useSearch } from "../../providers/NavbarProvider";
+import { useOut } from "../../providers/OuterProvider";
 //call object elements from App.js with object destructuring
 
-export const Cards = ({ setFavList, data, favList, val }) => {
+export const Cards = () => {
+  const { isAuthenticated, data, favList, setFavList } = useOut();
+  console.log(isAuthenticated);
+  //call my custom hook
+  const { val } = useSearch();
+
   const filteredData = data
     .filter((card) => card.title.toLowerCase().includes(val.toLowerCase()))
     .map((card) => {
@@ -16,7 +23,6 @@ export const Cards = ({ setFavList, data, favList, val }) => {
           isFavorite={favList.includes(
             card.id
           )} /* check if the id key of card exist in local storage */
-          setFavList={setFavList}
           card={card}
           key={data.id}
           id={card.id} /* call id key of the card with id unique name */

@@ -3,8 +3,10 @@ import PropTypes from "prop-types";
 //import css file
 import "./Cards.css";
 import { MdOutlineFavorite } from "react-icons/md";
+import { useOut } from "../../providers/OuterProvider";
 //call object elements from Cards.js with object destructuring
-export const Card = ({ card, setFavList, id, isFavorite }) => {
+export const Card = ({ card, id, isFavorite }) => {
+  const { setFavList } = useOut();
   // onclick event by like icon, this function gonna run
   const changeColor = () => {
     //i can modify the favList only with setFavList function. It was state in App.js
@@ -45,7 +47,7 @@ export const Card = ({ card, setFavList, id, isFavorite }) => {
 
 Card.protoTypes = {
   isFavorite: PropTypes.bool.isRequired,
-  data: PropTypes.object.isRequired,
+
   setFavList: PropTypes.object.isRequired,
   id: PropTypes.number.isRequired,
 };
