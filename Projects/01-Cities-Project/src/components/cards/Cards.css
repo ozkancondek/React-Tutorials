@@ -30,22 +30,36 @@
   margin: 1rem;
   position: relative;
   overflow: hidden;
-  width: 33%;
+  width: 500px;
+  height: 300px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   font-family: "Amatic SC", cursive;
   font-size: 36px;
   border-top: 5px solid white;
   color: white;
+  width: 95%px;
+  margin: 5px;
+
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .cards img {
   object-fit: cover;
   height: 200px;
   border-radius: 7px;
-  width: 300px;
+  width: 95%;
   filter: grayscale(0%);
+  margin: 5px;
 }
 
 .cards img:hover {
@@ -69,20 +83,7 @@
 
 .favoriteIcon {
   color: white;
-  position: absolute;
-  left: 30px;
-  top: 40px;
+
+  margin-top: 6px;
   cursor: pointer;
-}
-
-.vis {
-  visibility: visible;
-}
-
-.unvis {
-  visibility: hidden;
-}
-
-.try {
-  color: aqua;
 }

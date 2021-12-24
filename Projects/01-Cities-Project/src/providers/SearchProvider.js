@@ -10,7 +10,7 @@ export const useSearch = () => {
   return myData;
 };
 
-export const NavbarProvider = ({ children }) => {
+export const SearchProvider = ({ children }) => {
   const [val, setVal] = useState("");
 
   return (
@@ -20,9 +20,7 @@ export const NavbarProvider = ({ children }) => {
   );
 };
 
-NavbarProvider.protoTypes = {
+SearchProvider.protoTypes = {
   val: PropTypes.string.isRequired,
   setVal: PropTypes.object.isRequired,
 };
-
-/*  const { name } = useSearch(); */

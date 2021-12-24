@@ -1,14 +1,11 @@
 import React from "react";
 
-import { Cards } from "../components/cards/Cards";
-import { Footer } from "../components/footer/Footer";
+import Slider from "../components/slider/Slider";
 
 export const Home = () => {
   return (
     <div>
-      <Cards />
-
-      <Footer />
+      <Slider />
     </div>
   );
 };

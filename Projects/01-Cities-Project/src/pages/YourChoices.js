@@ -2,7 +2,7 @@ import React from "react";
 import "../components/cards/Cards.css";
 import { Card } from "../components/cards/Card";
 
-import { useOut } from "../providers/OuterProvider";
+import { useOut } from "../providers/MainProvider";
 
 export const YourChoices = () => {
   const { favList, data } = useOut();
@@ -11,14 +11,11 @@ export const YourChoices = () => {
     .filter((card) => favList.includes(card.id))
     .map((card) => {
       return (
-        /*  send to Card data of  the Cards components */
         <Card
-          isFavorite={favList.includes(
-            card.id
-          )} /* check if the id key of card exist in local storage */
+          isFavorite={favList.includes(card.id)}
           card={card}
           key={data.id}
-          id={card.id} /* call id key of the card with id unique name */
+          id={card.id}
         />
       );
     });

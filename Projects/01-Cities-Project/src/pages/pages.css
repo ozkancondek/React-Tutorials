@@ -14,9 +14,10 @@
 
 .showtitle {
   font-family: "Amatic SC", cursive;
-  font-size: 36px;
+  font-size: 40px;
   border-top: 5px solid white;
   color: white;
+  text-align: center;
 }
 
 .showcard img {

@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { useOut } from "../providers/OuterProvider";
+import { useOut } from "../providers/MainProvider";
 
 import "./pages.css";
 
@@ -8,7 +8,6 @@ export const ClickCity = () => {
   const params = useParams();
   const { data } = useOut();
   const filteredCity = data.find((c) => c.id === +params.cityid);
-  console.log(filteredCity);
 
   return (
     <div>
@@ -22,7 +21,6 @@ export const ClickCity = () => {
           <p>{filteredCity.decs}</p>
         </div>
       </div>
-      ozkan
     </div>
   );
 };

@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 //import css file
 import "./Cards.css";
 
-import { useSearch } from "../../providers/NavbarProvider";
-import { useOut } from "../../providers/OuterProvider";
+import { useSearch } from "../../providers/SearchProvider";
+import { useOut } from "../../providers/MainProvider";
+import { Col, Container, Row } from "react-bootstrap";
 //call object elements from App.js with object destructuring
 
 export const Cards = () => {
@@ -29,11 +30,9 @@ export const Cards = () => {
       );
     });
   return (
-    <div className="card-container">
-      {/*  use Card compenent for each element of the data object */}
-      {filteredData}
-      {/* <Sidebar favList={favList} /> */}
-    </div>
+    <Container className="text-center mt-4 height:500px">
+      <Row className="d-flex justify-content-center">{filteredData}</Row>
+    </Container>
   );
 };
 
