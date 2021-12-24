@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Container, Form, FormControl, Nav, Navbar } from "react-bootstrap";
-import { FaPlaneDeparture } from "react-icons/fa";
+
 import { useNavigate } from "react-router-dom";
 import { useSearch } from "../../providers/SearchProvider";
 import { useOut } from "../../providers/MainProvider";
+import { FaRaspberryPi } from "react-icons/fa";
 
 export const Navi = () => {
   const { setVal } = useSearch();
@@ -16,9 +17,9 @@ export const Navi = () => {
   };
   return (
     <Navbar
-      bg="light"
+      bg="dark"
       expand="lg"
-      expand="lg"
+      variant="dark"
       onSelect={(eventKey) =>
         eventKey === "home" ? navigate("/") : navigate(`/${eventKey}`)
       }
@@ -26,7 +27,7 @@ export const Navi = () => {
       <Container fluid>
         <Navbar.Brand>
           <Nav.Link eventKey="home">
-            <FaPlaneDeparture />
+            <FaRaspberryPi style={{ width: "40px" }} />
             BlueBerry
           </Nav.Link>
         </Navbar.Brand>

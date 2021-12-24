@@ -3,7 +3,14 @@ import { Button, Form } from "react-bootstrap";
 
 export const LoginForm = () => {
   return (
-    <div style={{ width: "60%", margin: "auto" }}>
+    <div
+      style={{
+        width: "40%",
+        margin: "auto",
+        marginTop: "50px",
+        marginBottom: "50px",
+      }}
+    >
       <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
