@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const OuterContext = createContext();
 
 export const MainProvider = (props) => {
-  const [isAuthenticated, setIsAutenticated] = useState(false);
+  const [isAuthenticated, setIsAutenticated] = useState(true);
 
   const [favList, setFavList] = useState([]);
   const localData = () => {
