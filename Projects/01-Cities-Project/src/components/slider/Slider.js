@@ -24,7 +24,7 @@ const Slider = () => {
   };
   return (
     <div>
-      <Carousel fade>{data.map(slide)}</Carousel>
+      <Carousel fade interval={3000}>{data.map(slide)}</Carousel>
     </div>
   );
 };
