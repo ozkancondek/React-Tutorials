@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 import { initialServices } from "../services/api";
 import { useErrorHandler } from "react-error-boundary";
 import PropTypes from "prop-types";
@@ -26,6 +26,16 @@ export const ApiProvider = ({ children }) => {
       {children}
     </ApiContext.Provider>
   );
+};
+
+//********custom hook */
+//const { response } = useApi();
+export const useApi = () => {
+  const response = useContext(ApiContext);
+  if (!response) {
+    throw new Error("useApi need to used in ApiProvider");
+  }
+  return response;
 };
 
 ApiProvider.propTypes = {

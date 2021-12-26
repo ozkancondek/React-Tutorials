@@ -39,7 +39,7 @@ export const MainProvider = (props) => {
 export const useOut = () => {
   const myOutData = useContext(OuterContext);
   if (!myOutData) {
-    throw new Error("useOut need to used in OuterProvider");
+    throw new Error("useOut need to used in MainProvider");
   }
   return myOutData;
 };

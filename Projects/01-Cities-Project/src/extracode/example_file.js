@@ -50,6 +50,7 @@ const App = () => {
     }
   };
 
+  // ***********************************************use this
   const fetchData3 = async () => {
     try {
       let res = await Api({
@@ -75,5 +76,27 @@ const App = () => {
   );
 };
 export { App };
+//Promise
+const test = (val) => {
+  return new Promise((resolve, reject) => {
+    if (val < 5) {
+      resolve("hello");
+    }
+    reject("maalesef");
+  });
+};
+const test2 = (val) => {
+  if (val < 5) {
+    return Promise.resolve("hello");
+  }
 
-//**************** */
+  return Promise.reject("maalesef");
+};
+
+test(15)
+  .then((res) => console.log("test then", res))
+  .catch((res) => console.log("test", res));
+test2(1)
+  .then((res) => console.log("ress", res))
+  .catch((res) => console.log("ress4545", res))
+  .finally(() => console.log("att"));

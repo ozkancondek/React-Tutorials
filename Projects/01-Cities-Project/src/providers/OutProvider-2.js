@@ -94,7 +94,7 @@ export const useOut = () => {
   return myOutData;
 };
 
-OuterProvider.propTypes = {
+OuterProvider.protoTypes = {
   isAuthenticated: PropTypes.bool.isRequired,
   data: PropTypes.object.isRequired,
   favList: PropTypes.array.isRequired,
