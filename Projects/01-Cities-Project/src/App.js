@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { ErrorBoundary } from "react-error-boundary";
+import { Error } from "./components/error/Error";
 import { Footer } from "./components/footer/Footer";
 import { Navi } from "./components/navbar/Navi";
 import { ApiProvider, useApi } from "./providers/ApiProvider";
@@ -30,7 +31,7 @@ const App = () => {
 //will used for getting data from api provider but i am getting data from local right now
 const Main = () => (
   <ErrorBoundary
-    FallbackComponent={MyError}
+    FallbackComponent={Error}
     onError={() => console.log("helloo")}
   >
     <MainProvider>
@@ -42,9 +43,5 @@ const Main = () => (
     </MainProvider>
   </ErrorBoundary>
 );
-
-const MyError = () => {
-  return <p>Upssss</p>;
-};
 
 export default Main;
