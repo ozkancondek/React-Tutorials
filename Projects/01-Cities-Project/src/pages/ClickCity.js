@@ -18,7 +18,7 @@ export const ClickCity = () => {
         <img src={filteredCity.image} alt={filteredCity.title}></img>
 
         <div className="showcard-over">
-          <p>{filteredCity.decs}</p>
+          <p>{filteredCity.desc}</p>
         </div>
       </div>
     </div>

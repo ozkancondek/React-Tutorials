@@ -22,7 +22,7 @@ export const YourChoices = () => {
     });
 
   return (
-    <div>
+    <div style={{ minHeight: "90vh" }}>
       <div className="card-container">{favCities}</div>
     </div>
   );
