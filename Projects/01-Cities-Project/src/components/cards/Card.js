@@ -55,9 +55,9 @@ export const Card = ({ card, id, isFavorite }) => {
   );
 };
 
-Card.protoTypes = {
+Card.propTypes = {
   isFavorite: PropTypes.bool.isRequired,
 
-  setFavList: PropTypes.object.isRequired,
+  setFavList: PropTypes.func.isRequired,
   id: PropTypes.number.isRequired,
 };

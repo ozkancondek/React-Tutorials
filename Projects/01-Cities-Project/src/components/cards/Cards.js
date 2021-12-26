@@ -36,9 +36,9 @@ export const Cards = () => {
   );
 };
 
-Cards.protoTypes = {
+Cards.propTypes = {
   val: PropTypes.string.isRequired,
   data: PropTypes.object.isRequired,
-  setFavList: PropTypes.object.isRequired,
+  setFavList: PropTypes.func.isRequired,
   favList: PropTypes.array.isRequired,
 };

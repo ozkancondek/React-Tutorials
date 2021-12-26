@@ -60,7 +60,7 @@ export const Navi = () => {
   );
 };
 
-Navi.protoTypes = {
-  setVal: PropTypes.object.isRequired,
-  filterCity: PropTypes.object.isRequired,
+Navi.propTypes = {
+  setVal: PropTypes.func.isRequired,
+  filterCity: PropTypes.func.isRequired,
 };

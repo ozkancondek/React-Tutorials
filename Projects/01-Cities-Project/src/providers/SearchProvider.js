@@ -20,7 +20,7 @@ export const SearchProvider = ({ children }) => {
   );
 };
 
-SearchProvider.protoTypes = {
+SearchProvider.propTypes = {
   val: PropTypes.string.isRequired,
-  setVal: PropTypes.object.isRequired,
+  setVal: PropTypes.func.isRequired,
 };

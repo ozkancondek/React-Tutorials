@@ -44,10 +44,10 @@ export const useOut = () => {
   return myOutData;
 };
 
-MainProvider.protoTypes = {
+MainProvider.propTypes = {
   isAuthenticated: PropTypes.bool.isRequired,
   data: PropTypes.object.isRequired,
   favList: PropTypes.array.isRequired,
-  setFavList: PropTypes.object.isRequired,
+  setFavList: PropTypes.func.isRequired,
   localData: PropTypes.object.isRequired,
 };
