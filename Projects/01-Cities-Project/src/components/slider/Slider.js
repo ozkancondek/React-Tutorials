@@ -8,7 +8,7 @@ const Slider = () => {
 
   const slide = (city) => {
     return (
-      <Carousel.Item key={city.id}>
+      <Carousel.Item interval={3000} key={city.id}>
         <img
           style={{ height: "95vh" }}
           className="d-block w-100"
@@ -24,7 +24,7 @@ const Slider = () => {
   };
   return (
     <div>
-      <Carousel fade interval={3000}>{data.map(slide)}</Carousel>
+      <Carousel fade>{data.map(slide)}</Carousel>
     </div>
   );
 };

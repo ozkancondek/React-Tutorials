@@ -50,8 +50,11 @@ test2(1)
   .catch((res) => console.log("ress4545", res))
   .finally(() => console.log("att"));
 
-const  Main= () => (
-  <ErrorBoundary FallbackComponent={MyError} onError={()=>console.log('helloo')}>
+const Main = () => (
+  <ErrorBoundary
+    FallbackComponent={MyError}
+    onError={() => console.log("helloo")}
+  >
     <MainProvider>
       <SearchProvider>
         <ApiProvider>
@@ -62,9 +65,8 @@ const  Main= () => (
   </ErrorBoundary>
 );
 
+const MyError = () => {
+  return <p>Upssss</p>;
+};
 
-const MyError=()=>{
-  return <p>Upssss</p>
-}
-
-export default Main
+export default Main;
