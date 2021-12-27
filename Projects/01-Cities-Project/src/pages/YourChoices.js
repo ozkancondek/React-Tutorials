@@ -4,6 +4,7 @@ import { Card } from "../components/cards/Card";
 
 import { useOut } from "../providers/MainProvider";
 import PropTypes from "prop-types";
+import { ChooseCity } from "../components/chooseCity/ChooseCity";
 
 export const YourChoices = () => {
   const { favList, data } = useOut();
@@ -21,11 +22,15 @@ export const YourChoices = () => {
       );
     });
 
-  return (
-    <div style={{ minHeight: "90vh" }}>
-      <div className="card-container">{favCities}</div>
-    </div>
-  );
+  if (favList.length !== 0) {
+    return (
+      <div style={{ minHeight: "90vh" }}>
+        <div className="card-container">{favCities}</div>
+      </div>
+    );
+  } else {
+    return <ChooseCity />;
+  }
 };
 
 YourChoices.propTypes = {
