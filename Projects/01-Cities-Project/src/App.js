@@ -15,7 +15,6 @@ const App = () => {
   useEffect(() => {
     const fetch = async () => {
       let res = await getPost(15);
-      console.log("res", res);
     };
     fetch();
   }, [getPost]);
