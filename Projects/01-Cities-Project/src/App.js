@@ -31,7 +31,7 @@ const App = () => {
 const Main = () => (
   <ErrorBoundary
     FallbackComponent={Error}
-    onError={() => console.log("helloo")}
+    /*     onError={() => console.log("helloo")} */
   >
     <MainProvider>
       <SearchProvider>

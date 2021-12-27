@@ -73,7 +73,14 @@ export const Navi = () => {
               aria-label="Search"
             />
           </Form>
-          {isAuthenticated && <Nav.Link eventKey="login">Login</Nav.Link>}
+          {/* {isAuthenticated && <Nav.Link eventKey="signup">Signup</Nav.Link>} */}
+          <Nav.Link eventKey="signin">Sign-in</Nav.Link>
+          <Nav.Link
+            style={{ border: "1px solid white", borderRadius: "5px" }}
+            eventKey="signup"
+          >
+            Sign-up
+          </Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

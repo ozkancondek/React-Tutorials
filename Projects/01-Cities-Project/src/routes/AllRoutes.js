@@ -1,9 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+
 import { Cities } from "../pages/Cities";
 import { ClickCity } from "../pages/ClickCity";
 import { Home } from "../pages/Home";
-import { Login } from "../pages/Login";
+import { SignIn } from "../pages/Signin";
+import { SignUp } from "../pages/SignUp";
 import { YourChoices } from "../pages/YourChoices";
 
 export const AllRoutes = () => {
@@ -14,7 +16,8 @@ export const AllRoutes = () => {
 
       <Route path="/:clickcity/:cityid" element={<ClickCity />} />
       <Route path="/cities" element={<Cities />} />
-      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/signin" element={<SignIn />} />
     </Routes>
   );
 };
