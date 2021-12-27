@@ -6,19 +6,21 @@ import "./Error.css";
 
 export const Error = () => {
   return (
-    <Container fluid>
-      <Row>
-        <Col className=" left">
-          <h1>Hmmm...</h1>
-          <p>Something went wrong</p>
-          <p>
-            You can return back to <Link to="/">main page.</Link>
-          </p>
-        </Col>
-        <Col>
-          <img src={error} alt="error" />
-        </Col>
-      </Row>
-    </Container>
+    <div className="container">
+      <Container fluid>
+        <Row>
+          <Col className=" left">
+            <h1>Hmmm...</h1>
+            <p>Something went wrong</p>
+            <p>
+              You can return back to <Link to="/">main page.</Link>
+            </p>
+          </Col>
+          <Col>
+            <img src={error} alt="error" />
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 };

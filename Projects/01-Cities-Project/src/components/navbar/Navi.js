@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Container, Form, FormControl, Nav, Navbar } from "react-bootstrap";
-
+import "./Navi.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useSearch } from "../../providers/SearchProvider";
 import { useOut } from "../../providers/MainProvider";
@@ -29,7 +29,7 @@ export const Navi = () => {
     >
       <Container fluid>
         <Navbar.Brand>
-          <Nav.Link eventKey="home">
+          <Nav.Link eventKey="home" className="underline">
             <FaRaspberryPi style={{ width: "40px" }} />
             BlueBerry
           </Nav.Link>
@@ -41,12 +41,23 @@ export const Navi = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link eventKey="cities">Cities</Nav.Link>
-            <Nav.Link eventKey="yourchoices">Your Choices</Nav.Link>
+            <Nav.Link className="underline" eventKey="cities">
+              Cities
+            </Nav.Link>
+            <Nav.Link className="underline" eventKey="yourchoices">
+              Your Choices
+            </Nav.Link>
 
-            <Nav.Link eventKey="services">Services</Nav.Link>
-            <Nav.Link eventKey="contact">Contact</Nav.Link>
+            <Nav.Link className="underline" eventKey="services">
+              Services
+            </Nav.Link>
+            <Nav.Link className="underline" eventKey="contact">
+              Contact
+            </Nav.Link>
           </Nav>
+          {/* {navigate("/cities") && (
+            <Nav.Link eventKey="contact">Contact</Nav.Link>
+          )} */}
           <Form
             className="d-flex"
             style={{
