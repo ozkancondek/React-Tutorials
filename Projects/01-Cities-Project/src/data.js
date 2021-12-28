@@ -89,7 +89,7 @@ export const data = [
   {
     id: 14,
     title: "RIVIERA PACIFICA",
-    desc: " If you’re looking for a resort-style beach vacation, complete with white-sand beaches and beautiful blue water, look no further than Panama`s Riviera Pacifica. ",
+    desc: " If you are looking for a resort-style beach vacation, complete with white-sand beaches and beautiful blue water, look no further than Panama`s Riviera Pacifica. ",
     image:
       " https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_620,q_65,w_1160/v1/clients/panama/_D755931_8829e49c-7b96-4a9a-a849-c8ee4597d5bb.jpg",
   },
@@ -284,7 +284,7 @@ export const data = [
   {
     id: 42,
     title: " Paro Taktsang Monastery  ",
-    desc: "Known as the “Tiger’s Lair” monastery, it literally clings to a sheer cliff at an elevation of 3.120 metres. ",
+    desc: "Known as the “Tiger`s Lair” monastery, it literally clings to a sheer cliff at an elevation of 3.120 metres. ",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/1/14/Taktshang_edit.jpg ",
   },
@@ -341,5 +341,348 @@ export const data = [
     desc: " Founded by the Almoravids (Moroccan Berbers) in the 11th century, Meknes was once the capital of Morocco and is the sixth largest city in the country today. ",
     image:
       "https://www.22places.de/images/2020/01/meknes-tour-bab-mansour.jpg ",
+  },
+  {
+    id: 51,
+    title: "Schloss Neuschwanstein  ",
+    desc: "If fairytale castles are your idea of gorgeous, then Schloss Neuschwanstein in southwest Bavaria is definitely for you.  ",
+    image:
+      "https://img.welt.de/img/reise/deutschland/mobile221097474/7381358667-ci16x9-w1300/Schloss-Neuschwanstein-im-Winter.jpg ",
+  },
+  {
+    id: 52,
+    title: "Tunnel of Love ",
+    desc: "Kleven`s famous “Tunnel of Love” is a fascinating example of what happens when nature is allowed to flourish side by side with man-made inventions.  ",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/1/16/%D0%9E%D1%81%D1%96%D0%BD%D1%8C_%D1%83_%D0%A2%D1%83%D0%BD%D0%B5%D0%BB%D1%96_%D0%BA%D0%BE%D1%85%D0%B0%D0%BD%D0%BD%D1%8F.JPG ",
+  },
+  {
+    id: 53,
+    title: " Sea of Stars  ",
+    desc: "The Maldive islands, comprising 26 atolls in the Indian Ocean offer some of the most exquisite geographical locations on the planet.",
+    image:
+      " https://static1.thetravelimages.com/wordpress/wp-content/uploads/2021/12/maldives-vaadhoo-island-sea-of-stars.jpg",
+  },
+  {
+    id: 54,
+    title: " Hang Son Doong ",
+    desc: "At 5 kilometres in length and 200 m in height, Hang Son Doong in Phong Nha-Ke Bang National Park near the Laos/Vietnam border is the biggest cave in the world. ",
+    image:
+      "https://images.rove.me/w_1920,q_85/xt2ufh5hpusset04lehp/vietnam-hang-son-doong.jpg ",
+  },
+  {
+    id: 55,
+    title: "  Tikal ",
+    desc: " Tikal in what is now northern Guatemala was one of the most significant kingdoms of the ancient Maya civilisation (around 2600 BC to 1697 AD). ",
+    image:
+      "https://cdn.getyourguide.com/img/location/5e1714710fa50.jpeg/88.jpg ",
+  },
+  {
+    id: 56,
+    title: "  Charyn Canyon",
+    desc: " The Charyn Canyon near the Chinese border, 200 km east of Almaty, has often been likened to the Grand Canyon. ",
+    image:
+      "https://worthseeing.de/wp-content/uploads/2019/02/charyn-canyon-kasachstan.jpg ",
+  },
+  {
+    id: 57,
+    title: "The Shahara Bridge  ",
+    desc: " 140 km north of Sana`a, the Shahara Bridge which connects two almost sheer mountain faces (Jabal al Faish and Jabal al Emir) at a height of 2.600 metres above sea level is also called “The Bridge of Sighs”.  ",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/3/31/Shaharah_bridge.jpg ",
+  },
+  {
+    id: 58,
+    title: "  Batu Caves",
+    desc: "The Batu caves in Gombak, Selangor is a series of caves rising to an elevation of almost 100 m and housing countless Hindu shrines, temples and statues. ",
+    image:
+      "https://www.reviewofreligions.org/wp-content/uploads/2021/01/shutterstock_1221988960-1-scaled.jpg ",
+  },
+  {
+    id: 59,
+    title: "  Tsingy de Bemaraha",
+    desc: " A combination of geological and climatic factors has produced in Tsingy a phenomenon which is unique in the world: a veritable forest of limestone karst, complete with pine-needles.",
+    image:
+      "https://www.tripsavvy.com/thmb/ua0qCFXDxzCZyZiy0m7eQtlJvIA=/3456x2304/filters:fill(auto,1)/GettyImages-846770942-5b473114c9e77c0037e29e0e.jpg ",
+  },
+  {
+    id: 60,
+    title: "  Frenchman`s Cove",
+    desc: "At 10.990 square kilometres, Jamaica (which means “the land of wood and water”) is the third largest island of the Greater Antilles in the Caribbean Sea. ",
+    image:
+      "https://www.awesome-journeys.net/wp-content/uploads/jamaica_port-antonio_frenchmans-cove_best-beach_5.jpg ",
+  },
+  {
+    id: 61,
+    title: " Visby  ",
+    desc: "A UNESCO World Heritage Site since 1995, evidence suggests that Visby on the Island of Gotland was occupied as early as the Stone Age. ",
+    image:
+      "https://d3aux7tjp119y2.cloudfront.net/original_images/_MG_8290-IBSweb_DP2MelM.jpg ",
+  },
+  {
+    id: 62,
+    title: " Table Mountain ",
+    desc: "Table Mountain is the name given to a strange flat-topped mountain, 1.084,6 metres above sea-level, which overlooks the city of Cape Town, a port and coastal city on the northwest peninsular of the Atlantic coast. ",
+    image:
+      "https://media.cntraveler.com/photos/5b742b191f8f5f5aacc37829/16:9/w_2560,c_limit/Table-Mountain_GettyImages-103891332.jpg ",
+  },
+  {
+    id: 63,
+    title: " Lalibela  ",
+    desc: "Lalibela in the Amhara region of northern Ethiopia is named after Saint Gebre Mesqel Lalibela, ruler of Ethiopia from the late 12th to the early 13th centuries. ",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a4/Bete_Giyorgis_01.jpg ",
+  },
+  {
+    id: 64,
+    title: "Ohrid   ",
+    desc: "The largest town on Lake Ohrid and the 8th largest in Macedonia, it is best known for having had 365 churches: one for each day of the year.  ",
+    image: " https://sworld.co.uk/img/img/121/photoAlbum/92222/originals/0.jpg",
+  },
+  {
+    id: 65,
+    title: " Djenne Mosque ",
+    desc: "  This adobe construction with its characteristic three minarets stands 16 metres high and is the largest mud-built building in the world.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/7/75/Djenne_great_mud_mosque.jpg ",
+  },
+  {
+    id: 66,
+    title: "Banana islands  ",
+    desc: "Sierra Leone`s Banana Islands comprise 3 islands: Ricketts Island (famed for its forests), Dublin Island (famed for its wonderful beaches) and Mes-Meheux. ",
+    image:
+      "https://www.visitsierraleone.org/wp-content/uploads/2021/10/Banana-Island-9.jpg ",
+  },
+  {
+    id: 67,
+    title: " Geirangerfjord  ",
+    desc: " Considered one of the most beautiful fjords in the world, the spectacular Geirangerfjord (together with the Nærøyfjord) was designated an UNESCO World Heritage Site in 2005.",
+    image:
+      "http://res.cloudinary.com/simpleview/image/upload/v1450117455/clients/norway/unesco-geirangerfjord-skagefla-waterfall-2-1_6cc6a64a-a204-432e-8753-01ef2080f24e.jpg ",
+  },
+  {
+    id: 68,
+    title: " Paharpur  ",
+    desc: "Paharpur`s chief claim to fame is the Somapura Mahavihara, a famous Buddhist monastery and one of the most significant archaeological sites in the country. ",
+    image: "https://i.redd.it/p7jbm3ziv6e51.jpg ",
+  },
+  {
+    id: 69,
+    title: "  Yeojwa Stream ",
+    desc: "You have probably already seen pictures of Yeojwa stream without realizing it; its picturesque wooden bridges and masses of cherry blossom crop up on calendars, postcards and lists of the world`s most romantic places with astonishing regularity. ",
+    image:
+      "https://youimg1.tripcdn.com/target/100t1f000001gqd4028C1.jpg?proc=source%2Ftrip ",
+  },
+  {
+    id: 70,
+    title: " Fish River Canyon ",
+    desc: "The Fish River Canyon in the south of Namibia is the largest canyon in Africa; at a whopping 160 km long, almost 550 metres deep in places and 27 km wide. ",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Fish_River_Canyon_Namibia.jpg/1200px-Fish_River_Canyon_Namibia.jpg ",
+  },
+  {
+    id: 71,
+    title: " Amarbayasgalant Monastery ",
+    desc: "The “Monastery of Tranquil Felicity” in northern Mongolia near the Selenga river is one of the three largest Buddhist complexes in the country.",
+    image:
+      "https://libreshot.com/wp-content/uploads/2020/01/amarbayasgalant-monastery.jpg",
+  },
+  {
+    id: 72,
+    title: " Amsterdam ",
+    desc: "The fifth largest seaport in Europe, the lively bustling city of Amsterdam was a small fishing village until the 12th century. ",
+    image:
+      " https://upload.wikimedia.org/wikipedia/commons/b/be/KeizersgrachtReguliersgrachtAmsterdam.jpg",
+  },
+  {
+    id: 73,
+    title: " Gravensteen Castle  ",
+    desc: " This astonishing edifice  the name of which means “castle of the counts”  was built in 1180 by the then Count of Flanders, Philip of Alsace.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/f/fd/Gent_Gravensteen_R01.jpg ",
+  },
+  {
+    id: 74,
+    title: " St Hilarion ",
+    desc: " The ruined castle of St. Hilarion in northern Cyprus is the best-preserved of the country`s three castles.",
+    image: "https://historyunearthed.files.wordpress.com/2013/04/289.jpg ",
+  },
+  {
+    id: 75,
+    title: "The Dome of Light ",
+    desc: " With a diameter of 30 metres, encompassing a total of 4.500 glass panels, the “Dome of Light” at the intersection of Kaohsiung`s orange and red metro lines is the largest work of glass art in the world. ",
+    image:
+      " https://previews.123rf.com/images/bee32/bee321808/bee32180800924/106613933-kaohsiung-taiwan-may-11-2018-the-dome-of-light-at-formosa-boulevard-mrt-station-in-sinsing-district-.jpg",
+  },
+  {
+    id: 76,
+    title: " Los Roques",
+    desc: " The Los Roques archipelago lies approximately 166 km off the coast of Venezuela in the Caribbean Sea and comprises over 40 islands and over 250 coral reefs covering a surface area of just over 40 square kilometres.",
+    image:
+      "https://cdn.tourradar.com/s3/tour/1500x800/203520_5f4675f4a41a4.jpg ",
+  },
+  {
+    id: 77,
+    title: " Tipova Monastery ",
+    desc: " Around 100 km north of the capital Chisinau (Moldova) is the largest Orthodox cave monastery in eastern Europe: the Tipova monastery. ",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6c/Rocky_monastery_near_Tipova.jpg ",
+  },
+  {
+    id: 78,
+    title: " Verzasca Dam ",
+    desc: " Located in the Italian part of Switzerland, Ticino (aka Tessin) in south central Switzerland, Verzasca Dam was the scene of the 7.5 second bungee jump at the start of the James Bond movie “Golden Eye”.",
+    image:
+      "https://checkyeti.imgix.net/images/prod/products/12544/shutterstock_1169747203-11.jpg ",
+  },
+  {
+    id: 79,
+    title: " Timgad ",
+    desc: "Timgad in the Aures mountains, Algeria was founded around 100 AD by the Roman emperor Trajan as fortifications against the Berbers.  ",
+    image:
+      "https://cdn.britannica.com/49/226849-050-1232DB1B/Ruins-Roman-City-Thamugadi-Timgad-Algeria-Trajan.jpg ",
+  },
+  {
+    id: 80,
+    title: " Andorra",
+    desc: " Owing to Andora`s high and mountainous location, only one road leads into and out of it; since very little of its land is arable, this kept it isolated and impoverished until the tourist industry discovered it after WWII.  ",
+    image:
+      " https://img.marinas.com/v2/f48a3a4466f4018d431533f80579983d12ebe1f821ea5ef62344a33af641fd94.jpg",
+  },
+  {
+    id: 81,
+    title: "Eisriesenwelt cave  ",
+    desc: "With a length of 42 km, the “Eisriesenwelt” near Werfen in the Salzburg region of Austria is the largest ice cave in the world. ",
+    image:
+      "https://www.salzburg.info/deskline/infrastruktur/objekte/eisriesenwelt-werfen_14915/image-thumb__653119__slider-main/Eiszapfenvorhang_14919.jpg ",
+  },
+  {
+    id: 82,
+    title: " Bom Jesus do Monte",
+    desc: "Bom Jesus do Monte (literally  Good Jesus of the Mount) is a sanctuary and pilgrimage site in the Tenoes part of northwestern Portugal, near Braga. ",
+    image:
+      " https://upload.wikimedia.org/wikipedia/commons/0/0a/Braga_-_Santu%C3%A1rio_do_Bom_Jesus_do_Monte_%281%29.jpg",
+  },
+  {
+    id: 83,
+    title: "  Fur Island ",
+    desc: " Fur (or Fuur) island off the northernmost tip of the Salling peninsula is only 22 square km and has a population of 900; nevertheless, it is one of Denmark`s most popular islands.",
+    image: "https://dxnews.com/forum/upload/36816-oz9v-p-fur-island.jpg ",
+  },
+  {
+    id: 84,
+    title: "Jerusalem  ",
+    desc: " One of the oldest cities in the world, and considered holy by Judaism, Christianity and Islam, the “City of David” was founded 3000 to 40000 years BC!",
+    image:
+      " https://i.pinimg.com/originals/87/7b/21/877b214dd8a34677a3b734971b71171a.jpg",
+  },
+  {
+    id: 85,
+    title: "The Door to Hell ",
+    desc: " The “Door to Hell” (aka the Darvaza crater) is a gas field in Derweze, west-central Turkmenistan.",
+    image:
+      "https://www.thoughtco.com/thmb/ZJdms54ba4np6pLduMuFsOewN6s=/2592x1944/filters:fill(auto,1)/GettyImages-496985398-cff6e650cdac49c8abe8118579c9082a.jpg ",
+  },
+  {
+    id: 86,
+    title: " Prague ",
+    desc: " The capital of the Czech Republic and the fifth largest city in the European Union, Prague is also considered the most romantic city in Europe.",
+    image: "https://media.timeout.com/images/105282343/image.jpg ",
+  },
+  {
+    id: 87,
+    title: " Cayo Coco",
+    desc: " Cayo Coco is an island in the Atlantic, part of a chain of islands known as “Jardines del Rey” (King`s Gardens). It is 270 square km in size and gains its name from the white ibis or coco  birds.",
+    image:
+      " https://content.r9cdn.net/rimg/himg/62/d2/5f/melia-5975-Tryp_Cayo_Coco_1LANDSCAPE_1200X650-625042.jpg?width=1200&height=630&crop=true",
+  },
+  {
+    id: 88,
+    title: "Colosseum ",
+    desc: "This was originally called the Flavian Amphitheatre and was mostly used as public entertainment arena.  ",
+    image:
+      " https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1200px-Colosseo_2020.jpg",
+  },
+  {
+    id: 89,
+    title: "Great Barrier Reef ",
+    desc: " Stretching for 2300 kilometres off the east coast of Australia, the Great Barrier Reef is one of nature's greatest marvels. ",
+    image:
+      " https://mediafiles.urlaubsguru.de/wp-content/uploads/2016/10/wonderful-and-beautiful-underwater-world-with-corals-and-tropical-fish-shutterstock_261953732-2.jpg",
+  },
+  {
+    id: 90,
+    title: "Pamukalle ",
+    desc: " This city is called the city of minerals as there are a lot of minerals left on the shores of this city by flowing water. ",
+    image:
+      " https://upload.wikimedia.org/wikipedia/commons/d/de/Pamukkale_30.jpg",
+  },
+  {
+    id: 91,
+    title: "Seychelles ",
+    desc: " A land of pristine beauty, Seychelles is a luxury destination which lies in the western part of the Indian Ocean. ",
+    image: " https://www.ahstatic.com/photos/a5e5_ho_00_p_1024x768.jpg",
+  },
+  {
+    id: 92,
+    title: " Costa Rica ",
+    desc: " Costa Rica, a Catholic country in Central America, shares its borders with Nicaragua and Panama.",
+    image:
+      "https://cdn.getyourguide.com/img/location/5e6a1a4570c88.jpeg/88.jpg ",
+  },
+  {
+    id: 93,
+    title: " San Francisco ",
+    desc: " San Francisco  has been a major tourist destination since the 1960s, thanks to its wide array of attractions, fantastic views of the San Francisco Bay and brilliant summer weather. ",
+    image:
+      " https://upload.wikimedia.org/wikipedia/commons/1/1e/San_Francisco_from_the_Marin_Headlands_in_March_2019.jpg",
+  },
+  {
+    id: 94,
+    title: " British Virgin Islands  ",
+    desc: "An overseas territory of Britain, British Virgin Islands is nothing but beautiful and an enchanting place to be.  ",
+    image:
+      " https://sailogy-pictures-public.imgix.net/uploads/sailogy/territory/2019/6/5/1437/85/british-virgin-islands.jpg",
+  },
+  {
+    id: 95,
+    title: "Amalfi ",
+    desc: " A quiet and quaint town located at the foot of Monte Cerreto, Amalfi is a haven for thrift shoppers and eaters.",
+    image:
+      "https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20180221133013/iStock-479218920.jpg ",
+  },
+  {
+    id: 96,
+    title: " Bangkok",
+    desc: "Glittering with lights, a lot of hustle bustle and a little bit of chaos, Bangkok is the capital city of Thailand. ",
+    image:
+      "https://image.geo.de/30149568/t/t2/v3/w1440/r0/-/bangkok-m-t75pkr-jpg--85294-.jpg ",
+  },
+  {
+    id: 97,
+    title: "Florence ",
+    desc: " Florence is endowed with rich historical and cultural heritage, ocated between Piedmont and the Coastal Regions of South Carolina. ",
+    image:
+      "https://www.travelanddestinations.com/wp-content/uploads/2019/08/Florence-Skyline-at-sunset.jpg ",
+  },
+  {
+    id: 98,
+    title: "Weimar ",
+    desc: " Weimar is a city in central Germany. It's known as the birthplace of Weimar Classicism, a humanistic cultural movement. ",
+    image:
+      " https://image.geo.de/30133216/t/99/v3/w1440/r1.5/-/weimar-f-127305986-jpg--75650-.jpg",
+  },
+  {
+    id: 99,
+    title: " Amasra",
+    desc: " Amasra is a small Black Sea port town in the Bartin Province, Turkey, formerly known as Amastris. The town today is much appreciated for its beaches and natural setting, which has made tourism the most important activity for its inhabitants.",
+    image:
+      "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/68/62/6862758_v1.jpeg ",
+  },
+  {
+    id: 100,
+    title: "Hagia Sophia ",
+    desc: " Hagia Sophia, officially known as the Holy Hagia Sophia Grand Mosque, and formerly the Church of Hagia Sophia and formerly museum is a Late Antique place of worship in Istanbul.",
+    image: "https://idsb.tmgrup.com.tr/ly/uploads/images/2020/07/15/46603.jpg ",
   },
 ];
