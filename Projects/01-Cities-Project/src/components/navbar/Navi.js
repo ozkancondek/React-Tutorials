@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+
 import { Container, Form, FormControl, Nav, Navbar } from "react-bootstrap";
 import "./Navi.css";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -85,9 +85,4 @@ export const Navi = () => {
       </Container>
     </Navbar>
   );
-};
-
-Navi.propTypes = {
-  setVal: PropTypes.func.isRequired,
-  filterCity: PropTypes.func.isRequired,
 };

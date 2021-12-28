@@ -2,7 +2,6 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import { useOut } from "../../providers/MainProvider";
 
-import PropTypes from "prop-types";
 const Slider = () => {
   const { data } = useOut();
 
@@ -30,8 +29,3 @@ const Slider = () => {
 };
 
 export default Slider;
-
-Slider.protoTypes = {
-  data: PropTypes.object.isRequired,
-  slide: PropTypes.func.isRequired,
-};

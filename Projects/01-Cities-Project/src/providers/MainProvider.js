@@ -1,6 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { data } from "../data";
-import PropTypes from "prop-types";
 
 const OuterContext = createContext();
 
@@ -42,12 +41,4 @@ export const useOut = () => {
     throw new Error("useOut need to used in MainProvider");
   }
   return myOutData;
-};
-
-MainProvider.propTypes = {
-  isAuthenticated: PropTypes.bool.isRequired,
-  data: PropTypes.object.isRequired,
-  favList: PropTypes.array.isRequired,
-  setFavList: PropTypes.func.isRequired,
-  localData: PropTypes.object.isRequired,
 };

@@ -31,7 +31,6 @@ const Login = () => {
     password: "",
   };
   const handleSubmit = (values, { resetForm }) => {
-    // console.log(values);
     alert(
       ` 
       email: ${values.email}

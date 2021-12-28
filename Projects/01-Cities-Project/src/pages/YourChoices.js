@@ -3,7 +3,7 @@ import "../components/cards/Cards.css";
 import { Card } from "../components/cards/Card";
 
 import { useOut } from "../providers/MainProvider";
-import PropTypes from "prop-types";
+
 import { ChooseCity } from "../components/chooseCity/ChooseCity";
 
 export const YourChoices = () => {
@@ -31,9 +31,4 @@ export const YourChoices = () => {
   } else {
     return <ChooseCity />;
   }
-};
-
-YourChoices.propTypes = {
-  favList: PropTypes.array.isRequired,
-  data: PropTypes.object.isRequired,
 };

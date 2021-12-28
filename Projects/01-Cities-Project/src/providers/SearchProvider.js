@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import PropTypes from "prop-types";
+
 export const NavContext = createContext();
 
 export const useSearch = () => {
@@ -18,9 +18,4 @@ export const SearchProvider = ({ children }) => {
       {children}
     </NavContext.Provider>
   );
-};
-
-SearchProvider.propTypes = {
-  val: PropTypes.string.isRequired,
-  setVal: PropTypes.func.isRequired,
 };
