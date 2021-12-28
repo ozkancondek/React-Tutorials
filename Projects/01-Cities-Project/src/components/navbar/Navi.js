@@ -30,7 +30,12 @@ export const Navi = () => {
       <Container fluid>
         <Navbar.Brand>
           <Nav.Link eventKey="home" className="underline">
-            <FaRaspberryPi style={{ width: "40px" }} />
+            <FaRaspberryPi
+              style={{
+                width: "50px",
+                height: "50px",
+              }}
+            />
             BlueBerry
           </Nav.Link>
         </Navbar.Brand>
@@ -42,7 +47,7 @@ export const Navi = () => {
             navbarScroll
           >
             <Nav.Link className="underline" eventKey="cities">
-              Cities
+              Places
             </Nav.Link>
             <Nav.Link className="underline" eventKey="yourchoices">
               Your Choices
