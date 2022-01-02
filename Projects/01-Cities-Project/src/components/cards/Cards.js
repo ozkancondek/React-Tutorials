@@ -30,3 +30,8 @@ export const Cards = () => {
     </Container>
   );
 };
+Cards.propTypes = {
+  favList: PropTypes.array.isRequired,
+  data: PropTypes.object.isRequired,
+  val: PropTypes.string.isRequired,
+};

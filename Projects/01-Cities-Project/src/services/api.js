@@ -1,5 +1,4 @@
 import axios from "axios";
-import PropTypes from "prop-types";
 
 const Api = axios.create({
   baseURL: "https://jsonplaceholder.typicode.com",
@@ -34,10 +33,4 @@ export const initialServices = {
   fetchData,
   fetchData2,
   fetchData3,
-};
-
-initialServices.propTypes = {
-  fetchData: PropTypes.func.isRequired,
-  fetchData2: PropTypes.func.isRequired,
-  fetchData3: PropTypes.func.isRequired,
 };
