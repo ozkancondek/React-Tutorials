@@ -1,11 +1,4 @@
 import styled from "styled-components";
-/* 
-export const EntranceHeader = styled.h1`
-  font-family: "Licorice", cursive;
-
-  font-size: 7rem;
-  font-weight: bold;
-`; */
 
 export const BackgroundContainer1 = styled.div`
   background-image: url(${(props) => props.img});
@@ -25,17 +18,32 @@ export const BackgroundContainer1 = styled.div`
   flex-wrap: wrap;
 `;
 
-/* export const InfoCardContainer = styled.div`
+export const GridContainer = styled.div`
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+  padding: 20px;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 30vh;
-`; */
-
-/* export const TwoItemContainer = styled.div`
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+`;
+export const CardContainer = styled.div`
   display: flex;
-  flex-direction: row;
-`; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & > img {
+    width: 300px;
+    height: 450px;
+    box-shadow: 10px 10px 5px #ccc;
+  }
+  & > p {
+    margin-top: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+  }
+`;
 
 export const TextContainer1 = styled.div`
   display: flex;
@@ -47,22 +55,28 @@ export const TextContainer1 = styled.div`
   padding: 10px;
   > * {
     font-size: 3rem;
+    @media (max-width: 560px) {
+      font-size: 1.5rem;
+    }
     font-family: "Playfair Display", serif;
   }
 `;
-
-/* export const EntranceHeader2 = styled.h4`
-  font-family: "Licorice", cursive;
-  font-size: 5rem;
-
-  text-decoration: underline;
+export const TextContainer2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  text-align: center;
+  border: 2px solid grey;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  > * {
+    font-size: 1.5rem;
+    font-family: "Roboto Condensed", sans-serif;
+  }
 `;
-
-//font-family: "Playfair Display", serif;
-
-//  @media (max-width: 560px) {
-//     font-size: 1rem;
-//   }
 
 /* 
   &:hover {

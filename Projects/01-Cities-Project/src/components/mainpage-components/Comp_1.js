@@ -8,7 +8,7 @@ import {
   TextContainer1,
 } from "../mainpage-components/StyledComponents";
 
-export const Comp_1 = () => {
+export const Comp1 = () => {
   const images = {
     img1: banner1,
     img2: banner2,

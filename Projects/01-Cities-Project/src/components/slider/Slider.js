@@ -1,8 +1,10 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import { Button, Carousel } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import { useOut } from "../../providers/MainProvider";
 
 const Slider = () => {
+  const navigate = useNavigate();
   const { data } = useOut();
   let randomCityIdArray = [];
   for (let i = 0; i <= 5; i++) {
@@ -26,10 +28,15 @@ const Slider = () => {
     );
   };
   return (
-    <div>
+    <div style={{ textAlign: "center" }}>
       <Carousel fade>
         {data.filter((city) => randomCityIdArray.includes(city.id)).map(slide)}
       </Carousel>
+      <div style={{ marginTop: "20px", marginBottom: "20px" }}>
+        <Button onClick={() => navigate("/cities")} variant="outline-secondary">
+          Discover More
+        </Button>
+      </div>
     </div>
   );
 };
