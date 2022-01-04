@@ -23,7 +23,7 @@
 } */
 
 .cards {
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: 3px 3px 5px rgba(49, 49, 49, 0.7);
   margin: 1rem;
   position: relative;
   overflow: hidden;
