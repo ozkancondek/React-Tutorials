@@ -4,7 +4,7 @@ import { MdOutlineFavorite } from "react-icons/md";
 import { useOut } from "../../providers/MainProvider";
 
 import { useNavigate } from "react-router-dom";
-import { Col } from "react-bootstrap";
+import { Button, Col } from "react-bootstrap";
 
 export const Card = ({ card, id, isFavorite }) => {
   const navigate = useNavigate();
@@ -28,27 +28,29 @@ export const Card = ({ card, id, isFavorite }) => {
 
   return (
     <Col className="mb-3 d-flex justify-content-center" xs={12} md={6} lg={4}>
-      <div
-        className="cards"
-        onClick={() => {
-          navigate("/clickcity/" + id);
-        }}
-      >
-        <div className="title">
-          <MdOutlineFavorite
-            className="favoriteIcon"
-            onClick={changeColor}
-            style={{ color: isFavorite ? "red" : "white" }}
-          />
-
-          {card.title}
-        </div>
-
+      <div className="cards">
         <img src={card.image} alt={card.title}></img>
 
         <div className="card-over">
           <p>{card.desc}</p>
         </div>
+        <div className="title">
+          {/*    <MdOutlineFavorite
+            className="favoriteIcon"
+            onClick={changeColor}
+            style={{ color: isFavorite ? "red" : "white" }}
+          /> */}
+
+          {card.title}
+        </div>
+        <Button
+          onClick={() => {
+            navigate("/clickcity/" + id);
+          }}
+          variant="outline-secondary"
+        >
+          Discover
+        </Button>
       </div>
     </Col>
   );

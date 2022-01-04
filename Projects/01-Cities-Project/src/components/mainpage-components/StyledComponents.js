@@ -53,6 +53,7 @@ export const TextContainer1 = styled.div`
   border-right: 4px solid;
   border-bottom: 4px solid;
   padding: 10px;
+  opacity: 0.9;
   > * {
     font-size: 3rem;
     @media (max-width: 560px) {

@@ -1,5 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import {
+  DetailsBar,
+  ImageContainer,
+  TextContainer,
+  TextPhotoContainer,
+} from "../components/cards/CardStyles";
 import { useOut } from "../providers/MainProvider";
 
 import "./pages.css";
@@ -11,16 +17,14 @@ export const ClickCity = () => {
 
   return (
     <div>
-      <div className="showcard">
-        <div className="showtitle">
+      <TextPhotoContainer>
+        <ImageContainer img={filteredCity.image}></ImageContainer>
+        <TextContainer>
           <h2>{filteredCity.title}</h2>
-        </div>
-        <img src={filteredCity.image} alt={filteredCity.title}></img>
-
-        <div className="showcard-over">
           <p>{filteredCity.desc}</p>
-        </div>
-      </div>
+        </TextContainer>
+      </TextPhotoContainer>
+      <DetailsBar>ozkan</DetailsBar>
     </div>
   );
 };
