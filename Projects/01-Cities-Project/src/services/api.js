@@ -6,7 +6,8 @@ const Api = axios.create({
 });
 
 export const fetchData = async (id) => {
-  let res = await axios("https://jsonplaceholder.typicode.com/todos/" + id);
+  let res = await axios("http://localhost:4000/api/cities/" + id);
+  // console.log("at", res.data);
 
   return res.data;
 };
