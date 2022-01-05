@@ -13,6 +13,8 @@ export const Toggle = () => {
     setTheme(checked ? darkTheme : lightTheme);
   };
 
+  //test variables and change body color
+
   return (
     <div>
       <main>
