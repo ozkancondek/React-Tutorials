@@ -1,7 +1,5 @@
 import PropTypes from "prop-types";
 import "./Cards.css";
-import { MdOutlineFavorite } from "react-icons/md";
-import { useOut } from "../../providers/MainProvider";
 
 import { useNavigate } from "react-router-dom";
 import { Button, Col } from "react-bootstrap";
@@ -33,7 +31,7 @@ export const Card = ({ card, id, isFavorite }) => {
 
 Card.propTypes = {
   isFavorite: PropTypes.bool.isRequired,
-  setFavList: PropTypes.array.isRequired,
+
   card: PropTypes.object.isRequired,
   id: PropTypes.number.isRequired,
 };

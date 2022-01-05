@@ -12,7 +12,6 @@ import {
   TextContainer,
   TextPhotoContainer,
 } from "./CardStyles";
-import { GridContainer } from "../mainpage-components/StyledComponents";
 
 export const Cards = () => {
   const { data, favList } = useOut();
@@ -32,7 +31,7 @@ export const Cards = () => {
       );
     });
   return (
-    <di>
+    <div>
       <TextPhotoContainer>
         <ImageContainer img={banner23}></ImageContainer>
         <TextContainer>
@@ -46,7 +45,7 @@ export const Cards = () => {
       <Container className="text-center mt-4 height:500px">
         <Row className="d-flex justify-content-center">{filteredData}</Row>
       </Container>
-    </di>
+    </div>
   );
 };
 Cards.propTypes = {

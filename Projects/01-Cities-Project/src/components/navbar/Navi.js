@@ -6,6 +6,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useSearch } from "../../providers/SearchProvider";
 import { useOut } from "../../providers/MainProvider";
 import { FaRaspberryPi } from "react-icons/fa";
+import { Toggle } from "../toggleButton/Toggle";
 
 export const Navi = () => {
   const { setVal } = useSearch();
@@ -28,6 +29,7 @@ export const Navi = () => {
       }
     >
       <Container fluid>
+        <Toggle />
         <Navbar.Brand>
           <Nav.Link eventKey="home" className="underline">
             <FaRaspberryPi
@@ -39,7 +41,7 @@ export const Navi = () => {
             BlueBerry
           </Nav.Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
+
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"

@@ -3,9 +3,12 @@ import { ErrorBoundary } from "react-error-boundary";
 import { Error } from "./components/error/Error";
 import { Footer } from "./components/footer/Footer";
 import { Navi } from "./components/navbar/Navi";
+
 import { ApiProvider, useApi } from "./providers/ApiProvider";
 import { MainProvider } from "./providers/MainProvider";
 import { SearchProvider } from "./providers/SearchProvider";
+import { ThemeProvider } from "./providers/ThemeProvider";
+
 import { AllRoutes } from "./routes/AllRoutes";
 
 const App = () => {
@@ -20,9 +23,11 @@ const App = () => {
   }, [getPost]);
   return (
     <div>
-      <Navi />
-      <AllRoutes />
-      <Footer />
+      <div>
+        <Navi />
+        <AllRoutes />
+        <Footer />
+      </div>
     </div>
   );
 };
@@ -33,13 +38,15 @@ const Main = () => (
     FallbackComponent={Error}
     /*     onError={() => console.log("helloo")} */
   >
-    <MainProvider>
-      <SearchProvider>
-        <ApiProvider>
-          <App />
-        </ApiProvider>
-      </SearchProvider>
-    </MainProvider>
+    <ThemeProvider>
+      <MainProvider>
+        <SearchProvider>
+          <ApiProvider>
+            <App />
+          </ApiProvider>
+        </SearchProvider>
+      </MainProvider>
+    </ThemeProvider>
   </ErrorBoundary>
 );
 
