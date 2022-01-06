@@ -65,9 +65,11 @@ export const Navi = () => {
           {/* {navigate("/cities") && (
             <Nav.Link eventKey="contact">Contact</Nav.Link>
           )} */}
+
           <Form
             className="d-flex"
             style={{
+              paddingTop: "20px",
               visibility:
                 location.pathname === "/cities" ? "visible" : "hidden",
             }}
@@ -80,6 +82,7 @@ export const Navi = () => {
               aria-label="Search"
             />
           </Form>
+
           {/* {isAuthenticated && <Nav.Link eventKey="signup">Signup</Nav.Link>} */}
           <Nav.Link eventKey="signin">Sign-in</Nav.Link>
           <Nav.Link

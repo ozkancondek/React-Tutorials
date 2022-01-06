@@ -17,6 +17,7 @@ export const ThemeProvider = ({ children }) => {
   };
   const [checked, setChecked] = useState(false);
   const [theme, setTheme] = useState(lightTheme);
+
   return (
     <ThemeContext.Provider
       value={{ lightTheme, darkTheme, checked, setChecked, theme, setTheme }}

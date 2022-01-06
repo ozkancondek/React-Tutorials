@@ -33,6 +33,7 @@ main {
   display: block;
 }
 .l:before {
+  content: "";
   background-color: #d7d7d7;
   border-radius: 50%;
   width: 1.2em;

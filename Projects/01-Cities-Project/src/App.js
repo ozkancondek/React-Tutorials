@@ -5,9 +5,10 @@ import { Footer } from "./components/footer/Footer";
 import { Navi } from "./components/navbar/Navi";
 
 import { ApiProvider, useApi } from "./providers/ApiProvider";
+
 import { MainProvider } from "./providers/MainProvider";
 import { SearchProvider } from "./providers/SearchProvider";
-import { ThemeProvider } from "./providers/ThemeProvider";
+import { ThemeProvider, useTheme } from "./providers/ThemeProvider";
 
 import { AllRoutes } from "./routes/AllRoutes";
 
@@ -21,13 +22,20 @@ const App = () => {
     };
     fetch();
   }, [getPost]);
+
+  //*************************** */
+  const { theme } = useTheme();
+  console.log(theme);
   return (
-    <div>
-      <div>
-        <Navi />
-        <AllRoutes />
-        <Footer />
-      </div>
+    <div
+      style={{
+        backgroundColor: ` ${theme.body}`,
+        color: ` ${theme.text}`,
+      }}
+    >
+      <Navi />
+      <AllRoutes />
+      <Footer />
     </div>
   );
 };
