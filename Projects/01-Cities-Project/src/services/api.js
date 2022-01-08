@@ -5,9 +5,11 @@ const Api = axios.create({
   /* timeout:"10000" wait for 10 sec */
 });
 
-export const fetchData = async (id) => {
-  if (id) {
-    let res = await axios("http://localhost:4000/api/cities/" + id);
+export const fetchData = async (pageNum) => {
+  if (pageNum) {
+    let res = await axios(
+      "http://localhost:4000/api/cities/" + `?page=${pageNum}`
+    );
     return res.data;
   } else {
     let res = await axios("http://localhost:4000/api/cities/");

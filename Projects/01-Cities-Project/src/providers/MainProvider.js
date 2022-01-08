@@ -5,6 +5,7 @@ const OuterContext = createContext();
 
 export const MainProvider = (props) => {
   const [isAuthenticated, setIsAutenticated] = useState(true);
+  const [pageNum, setPageNum] = useState(1);
 
   const [favList, setFavList] = useState([]);
   const localData = () => {
@@ -28,6 +29,8 @@ export const MainProvider = (props) => {
         favList,
         setFavList,
         localData,
+        setPageNum,
+        pageNum,
       }}
     >
       {props.children}

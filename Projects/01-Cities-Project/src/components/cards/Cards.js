@@ -16,7 +16,7 @@ import { useApi } from "../../providers/ApiProvider";
 import { useEffect, useState } from "react";
 
 export const Cards = () => {
-  const { favList } = useOut();
+  const { favList, setPageNum, pageNum } = useOut();
   const { getPost } = useApi();
 
   const { val } = useSearch();
@@ -26,14 +26,14 @@ export const Cards = () => {
   useEffect(() => {
     const fetch = async () => {
       try {
-        let res = await getPost();
+        let res = await getPost(pageNum);
         setPlaces(res);
       } catch (error) {
         console.log(error);
       }
     };
     fetch();
-  }, [getPost]);
+  }, [getPost, pageNum]);
 
   const filteredData = places
     .filter((card) => card.title.toLowerCase().includes(val.toLowerCase()))
