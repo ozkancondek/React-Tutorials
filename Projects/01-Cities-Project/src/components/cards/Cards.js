@@ -12,13 +12,30 @@ import {
   TextContainer,
   TextPhotoContainer,
 } from "./CardStyles";
+import { useApi } from "../../providers/ApiProvider";
+import { useEffect, useState } from "react";
 
 export const Cards = () => {
-  const { data, favList } = useOut();
+  const { favList } = useOut();
+  const { getPost } = useApi();
 
   const { val } = useSearch();
 
-  const filteredData = data
+  const [places, setPlaces] = useState([]);
+
+  useEffect(() => {
+    const fetch = async () => {
+      try {
+        let res = await getPost();
+        setPlaces(res);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetch();
+  }, [getPost]);
+
+  const filteredData = places
     .filter((card) => card.title.toLowerCase().includes(val.toLowerCase()))
     .map((card) => {
       return (

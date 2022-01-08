@@ -1,10 +1,9 @@
-import { useEffect } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import { Error } from "./components/error/Error";
 import { Footer } from "./components/footer/Footer";
 import { Navi } from "./components/navbar/Navi";
 
-import { ApiProvider, useApi } from "./providers/ApiProvider";
+import { ApiProvider } from "./providers/ApiProvider";
 
 import { MainProvider } from "./providers/MainProvider";
 import { SearchProvider } from "./providers/SearchProvider";
@@ -14,18 +13,18 @@ import { AllRoutes } from "./routes/AllRoutes";
 
 const App = () => {
   // const { getPost } = useContext(ApiContext);
-  const { getPost } = useApi();
+  // const { getPost } = useApi();
 
-  useEffect(() => {
-    const fetch = async () => {
-      let res = await getPost(15);
-    };
-    fetch();
-  }, [getPost]);
+  // useEffect(() => {
+  //   const fetch = async () => {
+  //     let res = await getPost();
+  //   };
 
-  //*************************** */
+  //   fetch();
+  // }, [getPost]);
+
   const { theme } = useTheme();
-  console.log(theme);
+
   return (
     <div
       style={{

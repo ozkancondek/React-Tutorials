@@ -6,10 +6,13 @@ const Api = axios.create({
 });
 
 export const fetchData = async (id) => {
-  let res = await axios("http://localhost:4000/api/cities/" + id);
-  // console.log("at", res.data);
-
-  return res.data;
+  if (id) {
+    let res = await axios("http://localhost:4000/api/cities/" + id);
+    return res.data;
+  } else {
+    let res = await axios("http://localhost:4000/api/cities/");
+    return res.data;
+  }
 };
 export const fetchData2 = async () => {
   let res = await axios({
