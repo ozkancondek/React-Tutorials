@@ -17,5 +17,10 @@ export const PaginationBar = styled.div`
       color: white;
       border: 1px solid #4caf50;
     }
+    &:focus {
+      color: white;
+      border: 1px solid #4caf50;
+      background-color: rgb(146, 146, 146);
+    }
   }
 `;

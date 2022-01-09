@@ -1,4 +1,5 @@
 import { ErrorBoundary } from "react-error-boundary";
+
 import { Error } from "./components/error/Error";
 import { Footer } from "./components/footer/Footer";
 import { Navi } from "./components/navbar/Navi";

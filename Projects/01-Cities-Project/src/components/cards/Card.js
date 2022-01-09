@@ -17,6 +17,7 @@ export const Card = ({ card, id, isFavorite }) => {
         </div>
         <div className="title">{card.title}</div>
         <Button
+          style={{ marginBottom: "10px" }}
           onClick={() => {
             navigate("/clickcity/" + id);
           }}

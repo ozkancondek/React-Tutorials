@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { data } from "../data";
+import { useTheme } from "./ThemeProvider";
 
 const OuterContext = createContext();
 
@@ -8,8 +9,10 @@ export const MainProvider = (props) => {
   const [pageNum, setPageNum] = useState(1);
 
   const [favList, setFavList] = useState([]);
+
   const localData = () => {
     const response = localStorage.getItem("localData");
+
     if (!response) {
       return;
     }

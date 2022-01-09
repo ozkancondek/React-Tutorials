@@ -11,9 +11,8 @@ export const Toggle = () => {
     setChecked(e.target.checked);
 
     setTheme(checked ? lightTheme : darkTheme);
+    // localStorage.setItem("theme", JSON.stringify(checked));
   };
-
-  //test variables and change body color
 
   return (
     <div>

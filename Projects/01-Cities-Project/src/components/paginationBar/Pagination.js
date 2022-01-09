@@ -19,7 +19,7 @@ export const Pagination = () => {
   fetch();
 
   let cardNumberInPage = 20;
-  let active = 1;
+
   let items = [];
   for (let i = 1; i <= lenData / cardNumberInPage; i++) {
     items = [...items, i];

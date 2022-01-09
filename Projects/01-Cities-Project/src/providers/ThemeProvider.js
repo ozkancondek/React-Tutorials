@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const ThemeContext = createContext();
 export const ThemeProvider = ({ children }) => {
@@ -17,6 +17,14 @@ export const ThemeProvider = ({ children }) => {
   };
   const [checked, setChecked] = useState(false);
   const [theme, setTheme] = useState(lightTheme);
+  /*   const themeChoice = () => {
+    const themePreference = localStorage.getItem("theme");
+    setChecked(themePreference);
+  };
+
+  useEffect(() => {
+    themeChoice();
+  }, []); */
 
   return (
     <ThemeContext.Provider
