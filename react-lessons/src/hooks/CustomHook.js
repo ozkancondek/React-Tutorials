@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../src/App.css";
 import { useInput } from "./useInput";
+import { useLocalStorage } from "./useLocalStorage";
 
 //I can use hook in hook
 //if i use a custom hook in a component twice, i use two different state piece
@@ -19,9 +20,17 @@ export const CustomHook = () => {
   //     // [e.target.name] because its key in object
   //   };
 
-  //use custom hook here
-  const [inputs, handleChange] = useInput();
-  console.log(inputs);
+  const initialState = { name: "", age: "", email: "" };
+  const [storage, updateStorage] = useLocalStorage("inputs", initialState);
+
+  //use custom hook here get first initial state or from local storage
+  const [inputs, handleChange] = useInput(storage);
+
+  //save input object to local storage  but first tuen it to string format
+
+  useEffect(() => {
+    updateStorage(inputs);
+  }, [inputs]);
   return (
     <div className="content">
       <h2>custom hook example</h2>
