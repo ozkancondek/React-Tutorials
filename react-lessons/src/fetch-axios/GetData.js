@@ -30,8 +30,8 @@ export const GetData = () => {
     <div className="content">
       <h2> Axios-Fetch</h2>
 
-      <h3>Country Name: {peru[0].name.common}</h3>
-      <h3>Capital City: {peru[0].capital}</h3>
+      {/*    <h3>Country Name: {peru[0].name.common}</h3>
+      <h3>Capital City: {peru[0].capital}</h3> */}
     </div>
   );
 };
