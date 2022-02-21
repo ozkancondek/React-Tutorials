@@ -12,7 +12,7 @@ export const ES6 = () => {
 
   //arrow function
 
-  console.log(sum(2, 5));
+  //console.log(sum(2, 5));
   function sum(a, b) {
     return a + b;
   }
@@ -23,6 +23,40 @@ export const ES6 = () => {
   // console.log(divide(8, 2));
 
   const divide = (a, b) => a / b;
+
+  //spread operator
+
+  let user2 = {
+    name: "ozkan",
+    city: "weimar",
+    age: 45,
+    hobbies: ["diving", "drawing"],
+  };
+  //we dont use this method in react when we modify the state
+  //user2.city = "berlin"
+  //but i want to change state
+  user2 = {
+    ...user2,
+    city: "berlin",
+  };
+  //console.log(user2);
+
+  const reducer = (state, action) => {
+    switch (action) {
+      case "ADD_HOBBY":
+        return { ...state, hobbies: [...state.hobbies, "dancing"] };
+
+      default:
+        return state;
+    }
+  };
+  //dispatch({type:"ADD_HOBBY",payload : "dancing"})
+
+  console.log(reducer(user2, "ADD_HOBBY"));
+
+  //actually i can also use array.push(item) method but
+  // with spread operator PaymentMethodChangeEvent, i am making a new copy of current state
+  // and then modifing this new copied state
 
   return (
     <div className="content">
