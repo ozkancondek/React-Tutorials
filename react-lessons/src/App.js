@@ -3,6 +3,7 @@ import { CustomHook } from "./hooks/CustomHook";
 import { UseEffect } from "./hooks/UseEffect";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import { ES6 } from "./ES6/ES";
 // import TodoList from "./redux/components/TodoList";
 // import TodoInput from "./redux/components/TodoInput";
 
@@ -12,6 +13,7 @@ function App() {
       <UseEffect />
       <CustomHook />
       <GetData />
+      <ES6 />
     </div>
   );
 }
