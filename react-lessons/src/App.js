@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { ES6 } from "./ES6/ES";
 import { Reducer } from "./reducer/Reducer";
+import { AsyncAwait } from "./fetch-axios/AsyncAwait";
 // import TodoList from "./redux/components/TodoList";
 // import TodoInput from "./redux/components/TodoInput";
 
@@ -16,6 +17,7 @@ function App() {
       <GetData />
       <ES6 />
       <Reducer />
+      <AsyncAwait />
     </div>
   );
 }
