@@ -4,6 +4,7 @@ import { UseEffect } from "./hooks/UseEffect";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { ES6 } from "./ES6/ES";
+import { Reducer } from "./reducer/Reducer";
 // import TodoList from "./redux/components/TodoList";
 // import TodoInput from "./redux/components/TodoInput";
 
@@ -14,6 +15,7 @@ function App() {
       <CustomHook />
       <GetData />
       <ES6 />
+      <Reducer />
     </div>
   );
 }
